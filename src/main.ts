@@ -10,9 +10,12 @@ import "virtual:svg-icons-register";
 import gloablComponent from "./components/index";
 import "@/styles/index.scss";
 import router from "./routes";
+import pinia from "./store";
 
 const app = createApp(App);
 app.use(router);
+//安装仓库
+app.use(pinia);
 app.use(gloablComponent);
 app.use(ElementPlus, {
 	locale: zhCn

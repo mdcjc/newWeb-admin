@@ -3,7 +3,10 @@ import { ElMessage } from "element-plus";
 //创建axios实例
 const request = axios.create({
 	baseURL: import.meta.env.VITE_APP_BASE_API,
-	timeout: 5000
+	// 设置超时时间（30s）
+	timeout: 30000,
+	// 跨域时候允许携带凭证
+	withCredentials: true
 });
 //请求拦截器
 request.interceptors.request.use(config => {

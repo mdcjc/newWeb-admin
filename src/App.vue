@@ -1,8 +1,5 @@
 <template>
-	<div>
-		<SvgIcon name="wc"></SvgIcon>
-		<div class="box">123</div>
-	</div>
+	<router-view></router-view>
 </template>
 
 <script lang="ts" setup></script>

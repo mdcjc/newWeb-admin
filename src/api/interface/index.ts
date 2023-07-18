@@ -1,10 +1,10 @@
 export interface Result {
-	code: string;
+	code: number;
 	msg: string;
-	total: number;
 }
 
 // * 请求响应参数(包含data)
 export interface ResultData<T = any> extends Result {
+	token?: string;
 	data: T;
 }

@@ -30,7 +30,7 @@ import { ElNotification } from "element-plus";
 //引入获取当前时间的函数
 import { getTime } from "@/utils/time";
 //引入用户相关的小仓库
-import userStore from "@/store/modules/user";
+import userStore from "@/stores/modules/user";
 let useStore = userStore();
 //获取el-form组件
 let loginForms = ref();

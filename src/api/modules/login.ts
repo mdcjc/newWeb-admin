@@ -8,7 +8,7 @@ import type { loginFormData, userInfoReponseData } from "../interface/login";
 
 enum API {
 	LOGIN_URL = "/employe/login",
-	USERINFO_URL = "/admin/acl/index/info",
+	USERINFO_URL = "/employe/infos",
 	LOGOUT_URL = "/admin/acl/index/logout"
 }
 //登录接口

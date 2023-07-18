@@ -18,15 +18,16 @@
 		<div class="layout_tabbar"></div>
 		<!-- 展示区域 -->
 		<div class="layout_main">
-			<router-view></router-view>
+			<Main></Main>
 		</div>
 	</div>
 </template>
 
 <script setup lang="ts" name="layout">
-import UserStore from "@/store/modules/user";
+import UserStore from "@/stores/modules/user";
 import Logo from "./logo/index.vue";
 import Menu from "./Menu/index.vue";
+import Main from "./Main/index.vue";
 const userStore = UserStore();
 </script>
 
@@ -55,6 +56,7 @@ const userStore = UserStore();
 	.layout_tabbar {
 		position: fixed;
 		width: calc(100% - $base-menu-width);
+		background-color: aqua;
 		height: $base-tabbar-height;
 		top: 0px;
 		left: $base-menu-width;

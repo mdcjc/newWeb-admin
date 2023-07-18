@@ -10,10 +10,13 @@ import "virtual:svg-icons-register";
 import gloablComponent from "./components/index";
 import "@/styles/index.scss";
 import router from "./routes";
-import pinia from "./store";
+//引入路由鉴权文件
+import "@/routes/permisstion";
+import pinia from "./stores";
 
 const app = createApp(App);
 app.use(router);
+
 //安装仓库
 app.use(pinia);
 app.use(gloablComponent);
